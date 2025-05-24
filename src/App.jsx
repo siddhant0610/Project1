@@ -19,7 +19,7 @@ export default function App() {
      <div className="min-h-screen font-sans dark:bg-gray-900 dark:text-white transition-colors duration-300 px-4 sm:px-6 md:px-10">
         <Navbar darkMode={darkMode} toggleDarkMode={() => setDarkMode(!darkMode)} />
         <Routes>
-          <Route path="/contactlist" element={<ContactList />} />
+         
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Servicesprovided />} />
