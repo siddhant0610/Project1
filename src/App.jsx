@@ -6,7 +6,7 @@ import About from './navbar/Aboutus';
 import Servicesprovided from './navbar/Servicesprovided';
 import Contact from './navbar/Contactus';
 import ScrollToTop from './navbar/Scroll';
-import ContactList from './navbar/Contactlist';
+
 export default function App() {
   <  ScrollToTop />
   const [darkMode, setDarkMode] = useState(false);

@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 export default function Navbar({ darkMode, toggleDarkMode }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const linkClasses =
+    "px-4 py-2 rounded transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-indigo-500/30 hover:scale-105 rouded-md rounded-lg";
+
   return (
     <nav className="bg-white dark:bg-gray-800 shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -30,10 +33,10 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
 
           {/* Desktop Menu */}
           <ul className="hidden sm:flex space-x-6 text-indigo-600 dark:text-white font-medium">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/services">Services</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/" className={linkClasses}>Home</Link></li>
+            <li><Link to="/about" className={linkClasses}>About</Link></li>
+            <li><Link to="/services" className={linkClasses}>Services</Link></li>
+            <li><Link to="/contact" className={linkClasses}>Contact</Link></li>
           </ul>
 
           <button
@@ -47,10 +50,10 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
         {/* Mobile Menu */}
         {menuOpen && (
           <ul className="sm:hidden mt-4 space-y-2 text-indigo-600 dark:text-white font-medium">
-            <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
-            <li><Link to="/about" onClick={() => setMenuOpen(false)}>About</Link></li>
-            <li><Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link></li>
-            <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
+            <li><Link to="/" onClick={() => setMenuOpen(false)} className={linkClasses}>Home</Link></li>
+            <li><Link to="/about" onClick={() => setMenuOpen(false)} className={linkClasses}>About</Link></li>
+            <li><Link to="/services" onClick={() => setMenuOpen(false)} className={linkClasses}>Services</Link></li>
+            <li><Link to="/contact" onClick={() => setMenuOpen(false)} className={linkClasses}>Contact</Link></li>
             <li>
               <button
                 onClick={() => {
