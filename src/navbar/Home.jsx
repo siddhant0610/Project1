@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import bg from '../assets/bg2.jpg'; // Ensure you have a background image in the assets folder
 const rotatingPhrases = [
   "Discover your path to healing",
   "Clarity through Reiki",
@@ -7,9 +8,12 @@ const rotatingPhrases = [
   "Insight from Tarot"
 ];
 const testimonials = [
-  { name: "Emily R.", quote: "Reiki Spiritual changed my life, the healing sessions are transformative!" },
-  { name: "James K.", quote: "The tarot readings helped me find clarity in my career and relationships." },
-  { name: "Sophia M.", quote: "Numerology insights were surprisingly accurate and enlightening." }
+  { name: "Puneeta ", quote: "Thank you, Neelu, for leading such a serene and calming meditation session. Your soothing presence created a peaceful space that allowed me to truly connect with myself. It helped me clear my mind and refocus inward." },
+  { name: "S.W", quote: "I’m deeply grateful for the beautiful experience, Neelu. The session was incredibly grounding and peaceful. I thoroughly enjoyed every moment. Lots of love." },
+  { name: "Mrs.Soodan", quote: " I'm still feeling the peaceful energy from the session. Thank you for sharing your light, Neelu. Stay blessed." },
+  { name: 'Preeti', quote: "The tarot readings helped me find clarity in my career and relationships." },
+{
+  name: "Priya", quote: " I noticed something truly positive — I haven't experienced any of the usual negative thoughts. I believe it's the powerful effect of yesterday's healing session. But I genuinely feel this shift is thanks to your healing. I'm grateful and hopeful to continue feeling better with each passing day." }
 ];
 export default function Home() {
   const navigate = useNavigate();
@@ -55,8 +59,17 @@ export default function Home() {
     }
   };
   return (
-      <section className="min-h-screen bg-gradient-to-r from-purple-600 to-indigo-600 text-white flex flex-col justify-center items-center px-6 text-centerbg-aqua text-white px-6" style={{ backgroundColor: '#00FFFF' }}>
-        <h1 className="text-5xl font-bold mb-6 animate-fadeIn">Welcome to Tatva Alignment</h1>
+    <section
+      className="min-h-screen text-white flex flex-col justify-center items-center px-6 text-center"
+      style={{
+        backgroundImage: `url(${bg})`,
+        backgroundSize: '120% 100%',           // Keeps image sharp if resolution is good
+        backgroundPosition: 'center',      // Centered
+        backgroundRepeat: 'no-repeat',     // No repeat
+        // imageRendering: 'auto', // Prevent repeating
+      }}
+    >
+      <h1 className="text-5xl font-bold mb-6 animate-fadeIn">Welcome to Tatva Alignment</h1>
       <h2 className="text-2xl h-10 mb-6 font-semibold min-w-[320px]">
         {displayedText}
         <span className="border-r-2 border-white animate-pulse ml-1" />
