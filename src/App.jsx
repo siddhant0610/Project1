@@ -6,7 +6,13 @@ import About from './navbar/Aboutus';
 import Servicesprovided from './navbar/Servicesprovided';
 import Contact from './navbar/Contactus';
 import ScrollToTop from './navbar/Scroll';
-
+import Reiki from './navbar/Services/Reiki';
+import InnerChild from './navbar/Services/InnerChild';
+import Tarot from './navbar/Services/Tarot';
+import Numerology from './navbar/Services/Numerology';
+import GuidedMeditataion from './navbar/Services/GuidedMeditation';
+import TraumaHealing from './navbar/Services/TraumaHealing';
+import Relationship from './navbar/Services/Relationship';
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
 
@@ -28,6 +34,13 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Servicesprovided />} />
+          <Route path="/services/Reiki" element={<Reiki />} />
+          <Route path='/services/InnerChild' element={<InnerChild />} />
+          <Route path='services/Tarot'element={<Tarot/>}/>
+          <Route path='services/GuidedMeditation'element={<GuidedMeditataion/>}/>
+          <Route path='services/Numerology'element={<Numerology/>}/>
+          <Route path='services/TraumaHealing'element={<TraumaHealing/>}/>
+         < Route path='services/Relationship'element={<Relationship/>}/>
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>

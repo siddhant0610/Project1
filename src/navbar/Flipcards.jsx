@@ -23,6 +23,7 @@ export default function FlipCard({ frontContent, backContent }) {
         }
         .flip-card:hover .flip-card-inner {
           transform: rotateY(180deg);
+          
         }
         .flip-card-front,
         .flip-card-back {

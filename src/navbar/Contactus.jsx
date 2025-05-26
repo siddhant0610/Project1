@@ -1,68 +1,78 @@
-import React, { useState } from 'react';
-import axios from 'axios';
+import React from "react";
 
-export default function Contactus() {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [success, setSuccess] = useState(false);
-  const [error, setError] = useState('');
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setError('');
-    try {
-      const response = await axios.post('http://localhost:5000/api/contact', formData);
-      console.log('Server response:', response.data);
-      setSuccess(true);
-      setFormData({ name: '', email: '', message: '' }); // Clear form
-    } catch (err) {
-      console.error('Error submitting form:', err);
-      setError('Failed to send message. Please try again.');
-    }
-  };
-
+const ContactUs = () => {
   return (
-    <section className="py-16 px-6 text-center min-h-screen bg-indigo-700 dark:bg-indigo-900 text-white">
-      <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
-      <p className="mb-6">Have questions or want to book a session? We'd love to hear from you.</p>
-      {success && <p className="text-green-300">Message sent successfully!</p>}
-      {error && <p className="text-red-300">{error}</p>}
-      <form onSubmit={handleSubmit} className="max-w-xl mx-auto space-y-4">
-        <input
-          type="text"
-          name="name"
-          placeholder="Your Name"
-          value={formData.name}
-          onChange={handleChange}
-          className="w-full px-4 py-2 rounded-md text-black"
-          required
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Your Email"
-          value={formData.email}
-          onChange={handleChange}
-          className="w-full px-4 py-2 rounded-md text-black"
-          required
-        />
-        <textarea
-          name="message"
-          rows="4"
-          placeholder="Your Message"
-          value={formData.message}
-          onChange={handleChange}
-          className="w-full px-4 py-2 rounded-md text-black"
-          required
-        ></textarea>
-        <button type="submit" className="bg-white text-indigo-700 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition">
-          Send Message
-        </button>
-      </form>
-    </section>
+    <div className="min-h-screen bg-primaryBg py-16 px-6">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+        {/* Static Info */}
+        <div className="bg-white/70 backdrop-blur-sm p-8 rounded-2xl shadow-md border border-secondaryAccent">
+          <h2 className="text-3xl font-bold text-primaryAccent mb-6">Get in Touch</h2>
+          <div className="space-y-6 text-textMain">
+            <div>
+              <h3 className="font-semibold text-lg">Name</h3>
+              <p>Tatvaalignment </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg">Email</h3>
+              <p>contact@tatvaalignment.com</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg">Phone</h3>
+              <p>+91-9876543210</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg">Address</h3>
+              <p>Dwarka new Delhi </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg">Business Hours</h3>
+              <p>Mon - Sat: 10 AM - 6 PM</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Dynamic Form */}
+        <div className="bg-white/70 backdrop-blur-sm p-8 rounded-2xl shadow-md border border-secondaryAccent">
+          <h2 className="text-3xl font-bold text-primaryAccent mb-6">Send Us a Message</h2>
+          <form className="space-y-5">
+            <div>
+              <label className="block text-sm font-medium text-textMain">Full Name</label>
+              <input
+                type="text"
+                name="name"
+                className="w-full mt-1 p-2 border rounded-lg shadow-sm bg-white border-secondaryAccent focus:ring-highlight focus:border-highlight"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-textMain">Email</label>
+              <input
+                type="email"
+                name="email"
+                className="w-full mt-1 p-2 border rounded-lg shadow-sm bg-white border-secondaryAccent focus:ring-highlight focus:border-highlight"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-textMain">Message</label>
+              <textarea
+                name="message"
+                rows="5"
+                className="w-full mt-1 p-2 border rounded-lg shadow-sm bg-white border-secondaryAccent focus:ring-highlight focus:border-highlight"
+              ></textarea>
+            </div>
+            <div className="text-right">
+              <button
+                type="submit"
+                className="bg-highlight text-white px-6 py-2 rounded-lg hover:bg-primaryAccent transition"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   );
-}
+};
+
+export default ContactUs;
+{/*routes for services, detailed info for each session */}

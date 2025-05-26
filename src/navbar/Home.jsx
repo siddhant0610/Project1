@@ -76,7 +76,7 @@ export default function Home() {
       </h2>
       <button
         onClick={goToServices}
-        className="bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition"
+        className="bg-white text-purple-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition"
       >
         View Our Services
       </button>

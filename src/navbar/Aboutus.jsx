@@ -30,7 +30,7 @@ export default function About() {
         </p>
       </div>
 
-      <h3 className="text-3xl font-semibold text-center mb-10">About Me</h3>
+      <h3 className="text-3xl font-semibold text-center mb-10">Our Journey</h3>
 
       <div className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl max-w-4xl mx-auto p-8 relative overflow-hidden border border-indigo-100 dark:border-indigo-500">
         <div className="absolute inset-0 bg-gradient-to-br from-indigo-100 to-transparent opacity-10 pointer-events-none"></div>
