@@ -17,6 +17,7 @@ export default function FlipCard({ frontContent, backContent }) {
           text-align: center;
           transition: transform 0.6s ease-in-out;
           transform-style: preserve-3d;
+          -webkit-transform-style: preserve-3d;
           border-radius: 0.75rem;
           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
           background-color: transparent;
@@ -30,6 +31,7 @@ export default function FlipCard({ frontContent, backContent }) {
           width: 100%;
           height: 100%;
           backface-visibility: hidden;
+          -webkit-backface-visibility: hidden;
           border-radius: 0.75rem;
           display: flex;
           flex-direction: column;
@@ -56,6 +58,7 @@ export default function FlipCard({ frontContent, backContent }) {
           background: linear-gradient(135deg, #F5F0E6 0%, #E8DBC5 100%);
           color: #4B3869;
           transform: rotateY(180deg);
+           -webkit-transform: rotateY(180deg);
           overflow-y: auto;
           text-align: left;
           border: 1px solid #CBA135;
