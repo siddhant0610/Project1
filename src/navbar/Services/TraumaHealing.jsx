@@ -32,7 +32,7 @@ export default function TraumaHealing() {
 
           {/* Benefits Section */}
           <div className="mb-8">
-            <h2 className="text-2xl font-semibold text-[#4B3869] mb-4 dark:text-[#DDBEC3]">Benefits of Reiki</h2>
+            <h2 className="text-2xl font-semibold text-[#4B3869] mb-4 dark:text-[#DDBEC3]">Benefits of Trauma Healing</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <ul className="list-disc list-inside space-y-2 text-[#3E3E3E] dark:text-[#DACFBB]">
                 <li>Reduces stress and anxiety</li>
