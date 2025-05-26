@@ -57,7 +57,7 @@ const ContactUs = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg">Name</h3>
-                  <p className="text-[#3E3E3E] dark:text-[#DACFBB]">Tatva Alignment</p>
+                  <p className="text-[#3E3E3E] dark:text-[#DACFBB]">Neelu Khajuria</p>
                 </div>
               </div>
 
