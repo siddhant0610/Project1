@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import bg from '../assets/bg2.jpg'; // Ensure you have a background image in the assets folder
+import bg from '../assets/bg6.jpg'; // Ensure you have a background image in the assets folder
 const rotatingPhrases = [
   "Discover your path to healing",
   "Clarity through Reiki",
@@ -60,10 +60,10 @@ export default function Home() {
   };
   return (
     <section
-      className="min-h-screen text-white flex flex-col justify-center items-center px-6 text-center"
+      className="min-h-screen text-white flex flex-col justify-center items-center px-6 text-center overflow-hidden"
       style={{
-        backgroundImage: `url(${bg})`,
-        backgroundSize: '120% 100%',           // Keeps image sharp if resolution is good
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${bg})`,
+        backgroundSize: 'cover',          // Keeps image sharp if resolution is good
         backgroundPosition: 'center',      // Centered
         backgroundRepeat: 'no-repeat',     // No repeat
         // imageRendering: 'auto', // Prevent repeating

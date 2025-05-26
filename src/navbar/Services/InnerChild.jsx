@@ -41,7 +41,7 @@ export default function InnerChild() {
 
           <div className="text-center mt-10">
             <a
-              href="/contact"
+              href="/"
               className="inline-block bg-[#CBA135] text-white font-medium px-6 py-3 rounded-xl hover:bg-[#b88f2e] transition"
             >
               Book a Session

@@ -10,9 +10,23 @@ import Trauma from '../assets/Trauma.jpg';
 import Relationship from '../assets/Relationship.jpg';
 const services = [
   {
+    title: "Trauma Healing",
+    description:
+      "Release and recover from deep-seated emotional trauma with expert holistic practices.",
+    icon: (
+      <img
+        src="https://static.vecteezy.com/system/resources/previews/012/188/989/original/black-on-white-silhouette-of-open-hands-holding-reiki-energy-symbol-hand-drawn-concept-of-hands-with-healing-energy-illustration-isolated-on-white-background-vector.jpg"
+        alt="Trauma Healing Icon"
+        className="h-12 w-12 object-contain"
+      />
+    ),
+    Image:Trauma,
+    link: "/Services/TraumaHealing",
+  },
+  {
     title: "Reiki Healing",
     description:
-      "Experience deep relaxation and energy cleansing through our expert Reiki sessions. Perfect for reducing stress and promoting healing.",
+    "Experience deep relaxation and energy cleansing through our expert Reiki sessions. Perfect for reducing stress and promoting healing.",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-indigo-600 dark:text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.333 0-2 .75-2 3m0 0c0 1.5 1 2.5 2 2.5s2-1 2-2.5c0-2.25-1.334-3-2-3zm0 0v5" />
@@ -86,20 +100,6 @@ const services = [
     Image:InnerChild,
     link: "/Services/InnerChild",
   },
-  {
-    title: "Trauma Healing",
-    description:
-      "Release and recover from deep-seated emotional trauma with expert holistic practices.",
-    icon: (
-      <img
-        src="https://static.vecteezy.com/system/resources/previews/012/188/989/original/black-on-white-silhouette-of-open-hands-holding-reiki-energy-symbol-hand-drawn-concept-of-hands-with-healing-energy-illustration-isolated-on-white-background-vector.jpg"
-        alt="Trauma Healing Icon"
-        className="h-12 w-12 object-contain"
-      />
-    ),
-    Image:Trauma,
-    link: "/Services/TraumaHealing",
-  },
 ];
 
 export default function Services() {
@@ -119,7 +119,7 @@ export default function Services() {
                   backgroundPosition: 'center',
                 }}
               >
-                <h3 className="relative z-10 text-xl font-semibold text-indigo-600 dark:text-indigo-300 text-center p-4 bg-black bg-opacity-50">
+                <h3 className="relative z-10 text-xl font-semibold text-white dark:text-indigo-300 text-center p-4 bg-black bg-opacity-40">
                   {title}
                 </h3>
               </div>
