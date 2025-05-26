@@ -62,7 +62,7 @@ export default function TraumaHealing() {
               href="https://calendly.com/neelukhajuria11/trauma-healing"
               className="inline-block bg-[#CBA135] hover:bg-[#4B3869] text-white font-medium px-8 py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 dark:bg-[#DDBEC3] dark:hover:bg-[#CBA135] dark:text-[#4B3869]"
             >
-              Book a Reiki Session
+              Book a Session
             </a>
           </div>
         </div>
