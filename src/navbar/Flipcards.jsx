@@ -6,10 +6,12 @@ export default function FlipCard({ frontContent, backContent }) {
       <style>{`
         .flip-card {
           perspective: 1000px;
+          -webkit-perspective: 1000px;
           width: 280px;
           height: 360px;
           margin: 0 auto;
         }
+
         .flip-card-inner {
           position: relative;
           width: 100%;
@@ -18,13 +20,17 @@ export default function FlipCard({ frontContent, backContent }) {
           transition: transform 0.6s ease-in-out;
           transform-style: preserve-3d;
           -webkit-transform-style: preserve-3d;
+          transform: translateZ(0);
+          -webkit-transform: translateZ(0);
           border-radius: 0.75rem;
           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-          background-color: transparent;
         }
+
         .flip-card:hover .flip-card-inner {
           transform: rotateY(180deg);
+          -webkit-transform: rotateY(180deg);
         }
+
         .flip-card-front,
         .flip-card-back {
           position: absolute;
@@ -38,33 +44,37 @@ export default function FlipCard({ frontContent, backContent }) {
           justify-content: center;
           align-items: center;
           padding: 1.5rem;
+          transform: translateZ(0);
+          -webkit-transform: translateZ(0);
           border: 1px solid #DDBEC3;
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
         }
-        /* Front card light mode */
+
         .flip-card-front {
           background-color: #FAF8F1;
           color: #3E3E3E;
+          z-index: 2;
         }
-        /* Front card dark mode */
+
         .dark .flip-card-front {
           background-color: #4B3869;
           color: #F5F0E6;
           border-color: #DDBEC3;
           box-shadow: 0 2px 10px rgba(218, 207, 187, 0.3);
         }
-        /* Back card - improved design */
+
         .flip-card-back {
           background: linear-gradient(135deg, #F5F0E6 0%, #E8DBC5 100%);
           color: #4B3869;
           transform: rotateY(180deg);
-           -webkit-transform: rotateY(180deg);
+          -webkit-transform: rotateY(180deg);
+          z-index: 1;
           overflow-y: auto;
           text-align: left;
           border: 1px solid #CBA135;
           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
-        /* Back card dark mode */
+
         .dark .flip-card-back {
           background: linear-gradient(135deg, #4B3869 0%, #3A2A54 100%);
           color: #F5F0E6;
@@ -72,14 +82,15 @@ export default function FlipCard({ frontContent, backContent }) {
           box-shadow: 0 4px 12px rgba(203, 161, 53, 0.2);
         }
 
-        /* Scrollbar styling */
         .flip-card-back::-webkit-scrollbar {
           width: 6px;
         }
+
         .flip-card-back::-webkit-scrollbar-track {
           background: rgba(203, 161, 53, 0.1);
           border-radius: 3px;
         }
+
         .flip-card-back::-webkit-scrollbar-thumb {
           background: rgba(203, 161, 53, 0.4);
           border-radius: 3px;
