@@ -21,9 +21,12 @@ const ContactUs = () => {
   e.preventDefault();
   setIsSubmitting(true);
   setSubmitStatus(null);
-
+const backendURL = 
+  process.env.NODE_ENV === 'production' 
+    ? 'https://backend-4-1eac.onrender.com/api/contact' 
+    : 'http://localhost:5000/api/contact';
   try {
-    const response = await fetch('https://backend-4-1eac.onrender.com/api/contact', {
+    const response = await fetch(backendURL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),

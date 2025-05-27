@@ -1,11 +1,12 @@
 import React from 'react';
 
 const expertise = [
-  "🧘 Yoga Alliance 200-Hour Certified: Aligning body, mind, and spirit holistically.",
+  "🔮 Tarot Coach: Providing insights and guidance through intuitive readings.",
+  "💔 Trauma & Inner Child Healer: Compassionate healing for emotional release.",
   "✋ Master Reiki Healer: Facilitating deep energetic healing and balance.",
   "🕉️ Yog Maya, Haleem, Lama Phera & Siddhi Healer: Spiritual tools for transformation and clarity.",
-  "💔 Trauma & Inner Child Healer: Compassionate healing for emotional release.",
-  "🔢 Numerologist & Tarot Life Coach: Life path insights and spiritual guidance."
+  "🔢 Numerologist : Life path insights and spiritual guidance.",
+  "🧘 Yoga Alliance 200-Hour Certified: Aligning body, mind, and spirit holistically."
 ];
 
 export default function About() {
