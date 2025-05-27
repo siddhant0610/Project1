@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 export default function Numerology() {
   return (
 
@@ -54,12 +54,12 @@ export default function Numerology() {
 
           {/* Booking Button */}
           <div className="text-center mt-10">
-            <a
-              href="/contact"
-              className="inline-block bg-[#CBA135] hover:bg-[#4B3869] text-white font-medium px-8 py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 dark:bg-[#DDBEC3] dark:hover:bg-[#CBA135] dark:text-[#4B3869]"
-            >
+            <Link
+    to="/contact"
+    className="inline-block bg-[#CBA135] hover:bg-[#4B3869] text-white font-medium px-8 py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 dark:bg-[#DDBEC3] dark:hover:bg-[#CBA135] dark:text-[#4B3869]"
+  >
               Contact Me
-            </a>
+            </Link>
           </div>
         </div>
       </div>
