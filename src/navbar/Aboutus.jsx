@@ -40,14 +40,14 @@ export default function About() {
             className="w-24 h-24 mx-auto rounded-full bg-indigo-500 text-white flex items-center justify-center text-3xl sm:text-4xl font-bold mb-4 shadow-lg transition-transform duration-300 hover:scale-110"
             aria-label="Initials NK for Neelu Khajuria"
             src={profile}
-          /> 
-          
+          />
+
           <h4 className="text-2xl font-bold text-indigo-600 dark:text-indigo-400 mb-1">Neelu Khajuria</h4>
           <p className="italic text-indigo-500 dark:text-indigo-300 mb-4">Founder, Spiritual Healer & Coach</p>
 
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
             I'm a  healer, coach, and guide devoted to helping women rediscover themselves and
-            transform their lives. Blending ancient spiritual wisdom with modern healing practices, I empower
+            transform their lives with 10+ years of experience. Blending ancient spiritual wisdom with modern healing practices, I empower
             you to unlock your inner potential and live with purpose, joy, and fulfillment.
           </p>
 

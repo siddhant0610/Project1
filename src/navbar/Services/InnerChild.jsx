@@ -13,11 +13,8 @@ export default function InnerChild() {
         <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-[#CBA135]/50 hover:shadow-xl transition-shadow duration-300 dark:bg-[#4B3869]/80 dark:border-[#DDBEC3]/50">
           {/* Introduction */}
           <p className="text-lg leading-relaxed mb-6 text-[#3E3E3E] dark:text-[#DACFBB]">
-            Not all wounds are visible.
-            Some pain lives in the silent corners of our hearts—unspoken, unseen, and often misunderstood.
-            Hidden trauma is the emotional and psychological pain that gets buried deep within us—either because we didn’t know how to express it, weren’t allowed to, or simply thought we had to move on. It can stem from childhood experiences, broken relationships, betrayals, neglect, or even moments we considered “too small” to matter but left a lasting impact.
-            <strong className="text-[#4B3869] dark:text-[#CBA135]">Tatva Alignment</strong>,
-            will guide you through my <strong className="text-[#4B3869] dark:text-[#CBA135]">"Energetic Trust Repair Session"</strong>,a deeply intiitive Tarot Coaching experience specifically designed for those struggling to trust after a painful relationship or betrayal           </p>
+            Inner Child Healing is a deep emotional and spiritual practice that involves connecting with, nurturing, and healing the wounded parts of your younger self. This part of you holds the memories, emotions, needs, and beliefs formed in childhood—and often silently shapes how you feel, react, and relate in adulthood.
+          </p>
 
           {/* How It Works Section */}
           {/* <div className="mb-8">
@@ -32,37 +29,62 @@ export default function InnerChild() {
 
           {/* Benefits Section */}
           <div className="mb-8">
-            <h2 className="text-2xl font-semibold text-[#4B3869] mb-4 dark:text-[#DDBEC3]">Benefits of Trauma Healing</h2>
+            <h2 className="text-2xl font-semibold text-[#4B3869] mb-4 dark:text-[#DDBEC3]"> What Is the Inner Child</h2>
+            <p className="text-lg leading-relaxed mb-6 text-[#3E3E3E] dark:text-[#DACFBB]">Your inner child is the emotional, sensitive, intuitive part of you that was formed in early life. It remembers:
+            </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <ul className="list-disc list-inside space-y-2 text-[#3E3E3E] dark:text-[#DACFBB]">
-                <li>Reduces stress and anxiety</li>
-                <li>Promotes emotional healing</li>
-                <li>Enhances mental clarity</li>
+                <li>Childhood joys, dreams, and playfulness
+                </li>
+                <li>Emotional wounds, neglect, or abandonment</li>
+                <li>Times when needs were unmet or feelings suppressed
+                </li>
               </ul>
-              <ul className="list-disc list-inside space-y-2 text-[#3E3E3E] dark:text-[#DACFBB]">
-                <li>Boosts the immune system</li>
-                <li>Releases emotional blockages</li>
-                <li>Improves sleep quality</li>
-              </ul>
+
             </div>
           </div>
 
+          <div className="mb-8">
+            <h2 className="text-2xl font-semibold text-[#4B3869] mb-4 dark:text-[#DDBEC3]"> </h2>
+            <p className="text-lg leading-relaxed mb-6 text-[#3E3E3E] dark:text-[#DACFBB]"> <div className="mb-8">
+
+              <h2 className="text-lg leading-relaxed mb-6 text-[#3E3E3E] dark:text-[#DACFBB]">Even if you’re not consciously aware, your inner child can still carry unprocessed pain, leading to:
+
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <ul className="list-disc list-inside space-y-2 text-[#3E3E3E] dark:text-[#DACFBB]">
+                  <li>Self-sabotage
+                  </li>
+                  <li>People-pleasing
+                  </li>
+                  <li>Fear of abandonment or rejection
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+            </p>
+
+          </div>
           {/* What to Expect Section */}
           <div className="mb-8">
-            <h2 className="text-2xl font-semibold text-[#4B3869] mb-4 dark:text-[#DDBEC3]">What to Expect</h2>
+            <h2 className="text-2xl font-semibold text-[#4B3869] mb-4 dark:text-[#DDBEC3]">Why Inner Child Healing Matters
+            </h2>
             <p className="text-lg leading-relaxed text-[#3E3E3E] dark:text-[#DACFBB]">
-              Expect to feel lighter, tired, or very peaceful.The healer may suggest journaling, rest, hydration, or grounding practices (e.g., walking barefoot, deep breathing).
-              Trauma healing is often a journey, not a one-time fix — multiple sessions may be recommended.
+              Inner child healing is a powerful process that addresses the emotional wounds rooted in our childhood
+              that continue to affect us in adulthood. It heals core wounds that impact our relationships and self-esteem,
+              breaks recurring emotional patterns or trauma loops, and helps restore a deep sense of joy, safety, and emotional freedom.
+              This journey of self-healing empowers you to reconnect with your authentic self and unlock your true potential.
             </p>
           </div>
 
           {/* Booking Button */}
           <div className="text-center mt-10">
             <a
-              href="https://calendly.com/neelukhajuria11/trauma-healing"
+              href="/contact"
               className="inline-block bg-[#CBA135] hover:bg-[#4B3869] text-white font-medium px-8 py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 dark:bg-[#DDBEC3] dark:hover:bg-[#CBA135] dark:text-[#4B3869]"
             >
-              Book a Session
+              Contact Me
             </a>
           </div>
         </div>
