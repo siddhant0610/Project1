@@ -1,12 +1,12 @@
 import React from 'react';
 
-export default function TraumaHealing() {
+export default function Reiki() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#FAF8F1] to-[#E8DBC5] py-12 px-6 dark:bg-gradient-to-b dark:from-[#4B3869] dark:to-[#3A2A54]">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <h1 className="text-4xl md:text-5xl font-bold text-center text-[#4B3869] mb-8 dark:text-[#F5F0E6]">
-          Trauma Healing
+          Reiki Healing
         </h1>
 
         {/* Main Content Card */}

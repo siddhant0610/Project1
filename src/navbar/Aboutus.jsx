@@ -1,5 +1,5 @@
 import React from 'react';
-
+import profile from '../assets/profile.jpg';
 const expertise = [
   "🔮 Tarot Coach: Providing insights and guidance through intuitive readings.",
   "💔 Trauma & Inner Child Healer: Compassionate healing for emotional release.",
@@ -36,12 +36,12 @@ export default function About() {
       <div className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl max-w-4xl mx-auto p-8 relative overflow-hidden border border-indigo-100 dark:border-indigo-500">
         <div className="absolute inset-0 bg-gradient-to-br from-indigo-100 to-transparent opacity-10 pointer-events-none"></div>
         <div className="text-center">
-          <div 
+          < img
             className="w-24 h-24 mx-auto rounded-full bg-indigo-500 text-white flex items-center justify-center text-3xl sm:text-4xl font-bold mb-4 shadow-lg transition-transform duration-300 hover:scale-110"
             aria-label="Initials NK for Neelu Khajuria"
-          >
-            NK
-          </div>
+            src={profile}
+          /> 
+          
           <h4 className="text-2xl font-bold text-indigo-600 dark:text-indigo-400 mb-1">Neelu Khajuria</h4>
           <p className="italic text-indigo-500 dark:text-indigo-300 mb-4">Founder, Spiritual Healer & Coach</p>
 
