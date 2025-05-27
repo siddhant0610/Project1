@@ -17,21 +17,48 @@ const ContactUs = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      console.log("Form submitted:", formData);
-      setIsSubmitting(false);
+ const handleSubmit = async (e) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+  setSubmitStatus(null);
+
+  try {
+    const response = await fetch('http://localhost:5000/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData),
+    });
+
+    const contentType = response.headers.get("content-type");
+
+    if (!response.ok) {
+      let errorMessage = "Something went wrong.";
+      if (contentType && contentType.includes("application/json")) {
+        const data = await response.json();
+        errorMessage = data.message || errorMessage;
+      } else {
+        errorMessage = await response.text();
+      }
+      throw new Error(errorMessage);
+    }
+
+    const data = await response.json(); // safe to parse now
+    if (data.success) {
       setSubmitStatus("success");
       setFormData({ name: "", email: "", message: "" });
-      
-      // Reset status after 5 seconds
-      setTimeout(() => setSubmitStatus(null), 5000);
-    }, 1500);
-  };
+    } else {
+      setSubmitStatus("error");
+      console.error("Backend error:", data);
+    }
+  } catch (error) {
+    setSubmitStatus("error");
+    console.error("Fetch error:", error.message);
+  }
+
+  setIsSubmitting(false);
+  setTimeout(() => setSubmitStatus(null), 5000);
+};
+
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#FAF8F1] to-[#E8DBC5] py-16 px-4 sm:px-6 dark:bg-gradient-to-b dark:from-[#4B3869] dark:to-[#3A2A54]">
