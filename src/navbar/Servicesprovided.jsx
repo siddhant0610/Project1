@@ -37,7 +37,7 @@ const services = [
     link: "/Services/Reiki",
   },
    {
-    title: "Relationship Healing",
+    title: "Karuna Healing",
     description:
       "Experience deep relaxation and energy cleansing through our expert Reiki sessions. Perfect for reducing stress and promoting healing.",
     icon: (
