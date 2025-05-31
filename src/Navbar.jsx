@@ -12,7 +12,7 @@ const socialLinks = [
   },
   {
     name: 'Facebook',
-    url: 'https://www.facebook.com/yourprofile',
+    url:'https://www.facebook.com/profile.php?id=61576813916078',
     icon: (
       <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 5 3.66 9.13 8.44 9.88v-7H8v-3h2.44V9.5c0-2.43 1.46-3.78 3.7-3.78 1.07 0 2.2.19 2.2.19v2.41H15.7c-1.28 0-1.66.79-1.66 1.6V12h2.83l-.45 3h-2.38v7C18.34 21.13 22 17 22 12z" />
     ),
