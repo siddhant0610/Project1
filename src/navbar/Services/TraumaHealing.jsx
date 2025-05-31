@@ -17,7 +17,7 @@ export default function TraumaHealing() {
             Some pain lives in the silent corners of our hearts—unspoken, unseen, and often misunderstood.
             Hidden trauma is the emotional and psychological pain that gets buried deep within us—either because we didn’t know how to express it, weren’t allowed to, or simply thought we had to move on. It can stem from childhood experiences, broken relationships, betrayals, neglect, or even moments we considered “too small” to matter but left a lasting impact.
             <strong className="text-[#4B3869] dark:text-[#CBA135]">Tatva Alignment</strong>,
-            will guide you through my <strong className="text-[#4B3869] dark:text-[#CBA135]">"Energetic Trust Repair Session"</strong>,a deeply intiitive Tarot Coaching experience specifically designed for those struggling to trust after a painful relationship or betrayal           </p>
+            will guide you through my <strong className="text-[#4B3869] dark:text-[#CBA135]">"Energetic Trust Repair Session"</strong>,a deeply intuitive Tarot Coaching experience specifically designed for those struggling to trust after a painful relationship or betrayal           </p>
 
           {/* How It Works Section */}
           {/* <div className="mb-8">

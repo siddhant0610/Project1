@@ -13,7 +13,7 @@ export default function Reiki() {
         <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-[#CBA135]/50 hover:shadow-xl transition-shadow duration-300 dark:bg-[#4B3869]/80 dark:border-[#DDBEC3]/50">
           {/* Introduction */}
           <p className="text-lg leading-relaxed mb-6 text-[#3E3E3E] dark:text-[#DACFBB]">
-            Thourgh distance Reiki healing involves a practitioner channeling energy into the client, while the clinet is in his own safe environmentr and the prectitionor send the energy sitting at his own place </p>
+          Through distance Reiki healing involves a practitioner channeling energy into the client, while the client is in his own safe environment and the practitioner send the energy sitting at his own place </p>
           {/* How It Works Section */}
           {/* <div className="mb-8">
             <h2 className="text-2xl font-semibold text-[#4B3869] mb-4 dark:text-[#DDBEC3]">How It Works</h2>
@@ -27,7 +27,7 @@ export default function Reiki() {
 
           {/* Benefits Section */}
           <div className="mb-8">
-            <h2 className="text-2xl font-semibold text-[#4B3869] mb-4 dark:text-[#DDBEC3]">Benefits of Trauma Healing</h2>
+            <h2 className="text-2xl font-semibold text-[#4B3869] mb-4 dark:text-[#DDBEC3]">Benefits of Reiki Healing</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <ul className="list-disc list-inside space-y-2 text-[#3E3E3E] dark:text-[#DACFBB]">
                 <li>Promote relaxation</li>

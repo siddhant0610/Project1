@@ -70,7 +70,7 @@ export default function Relationship() {
                 <li>Accelerated spiritual growth
 
                 </li>
-                <li>Clearing fear, guilt, shame,andgrief</li>
+                <li>Clearing fear, guilt, shame,and grief</li>
                
               </ul>
             </div>
