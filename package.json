@@ -3,12 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
- " Server":{
-    "proxy":{
-      
-      "/api":"http://localhost:5000"
-    } 
-
+  " Server": {
+    "proxy": {
+      "/api": "http://localhost:5000"
+    }
   },
   "scripts": {
     "dev": "vite",
@@ -20,9 +18,14 @@
   },
   "dependencies": {
     "axios": "^1.9.0",
+    "framer-motion": "^12.23.12",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-router-dom": "^7.6.0"
+    "react-router-dom": "^7.6.0",
+    "react-tsparticles": "^2.12.2",
+    "tsparticles": "^3.9.1",
+    "tsparticles-engine": "^2.12.0",
+    "tsparticles-slim": "^2.12.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
@@ -39,5 +42,4 @@
     "tailwindcss": "^3.4.17",
     "vite": "^6.3.5"
   }
- 
 }
