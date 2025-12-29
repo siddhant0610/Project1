@@ -18,7 +18,7 @@ const Numerology = lazy(() => import('./navbar/Services/Numerology'));
 const GuidedMeditation = lazy(() => import('./navbar/Services/GuidedMeditation'));
 const TraumaHealing = lazy(() => import('./navbar/Services/TraumaHealing'));
 const Relationship = lazy(() => import('./navbar/Services/Relationship'));
-const Courses = lazy(() => import('./navbar/Courses'));
+// const Courses = lazy(() => import('./navbar/Courses'));
 
 // --- SEO Configuration ---
 const seoConfig = {
@@ -127,7 +127,7 @@ export default function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="/courses" element={<Courses />} />
+                {/* <Route path="/courses" element={<Courses />} /> */}
                 
                 <Route path="/services" element={<Servicesprovided />} />
                 <Route path="/services/reiki" element={<Reiki />} />
